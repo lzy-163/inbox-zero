@@ -43,6 +43,7 @@ jobs:
         run: pnpm -F inbox-zero-ai test
         env:
           RUN_AI_TESTS: false
+          NEXT_PUBLIC_BASE_URL: "http://localhost:3000"
           DATABASE_URL: "postgresql://postgres:postgres@localhost:5432/postgres"
           AUTH_SECRET: "secret"
           GOOGLE_CLIENT_ID: "client_id"
